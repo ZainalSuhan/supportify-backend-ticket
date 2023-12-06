@@ -4,6 +4,7 @@ from datetime import datetime
 
 class ts_company_client(db.Model):
     id = db.Column(db.BigInteger, primary_key=True, autoincrement=True)
+    company_code = db.Column(db.String(10), nullable=False)
     client_code = db.Column(db.String(10), nullable=False, unique=True)
     client_name = db.Column(db.String(100), nullable=False)
     client_desc = db.Column(db.Text, nullable=True)
