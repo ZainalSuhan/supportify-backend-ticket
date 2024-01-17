@@ -1,3 +1,4 @@
+# Base image using python 3.10-alpine
 FROM python:3.10.13-alpine as base
 
 WORKDIR /supportify-backend
