@@ -57,5 +57,5 @@ jobs:
 #          username: ${{ secrets.DOCKERHUB_USERNAME }}
 #          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Push Docker image
-      run: docker push casatech/supportify-backend-ticket:${{ steps.short-sha.outputs.sha }}
+#    - name: Push Docker image
+#      run: docker push casatech/supportify-backend-ticket:${{ steps.short-sha.outputs.sha }}
